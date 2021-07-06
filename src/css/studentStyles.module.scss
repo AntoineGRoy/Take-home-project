@@ -1,0 +1,133 @@
+@import url(./_colors.css);
+/**Student Styling**/
+@media screen and (max-width:380px) {
+    .imgContainer{
+        display: flex;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .infosContainer{
+        width: 100%;
+        margin:0;
+        h1{
+            text-align: center;
+            margin:0;
+        }
+    }
+    
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--light);
+    padding:8px;
+    position: relative;
+    .plusMinusButton{
+        border:0;
+        outline:0 none transparent;
+        background:transparent;
+        position:absolute;
+        top:2.5rem; right:2rem; 
+        cursor: pointer;
+        .plusMinusIcon{
+            color:var(--dark);
+            font-size: 32px;
+            margin-top: -16px;
+            &:hover{
+                color:var(--darkFont);
+            }
+        }
+    }
+    
+    .imgContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            border:1px var(--light) solid;
+            border-radius: 50%;
+            width:124px;
+            margin:24px;
+            }
+    }
+}
+.infosContainer{
+    display: inline-flex;
+    flex-direction: column;
+    position:relative;
+    h1{
+        margin-bottom: 24px;
+        font-size: 32px;
+        font-weight: bold;
+        margin-top:24px;
+    }
+    ul{
+        li{
+            margin-left:24px;
+            list-style: none;
+            line-height: 1.4;
+            color:var(--lightFont);
+        }
+    }
+}
+
+/**Grades**/
+ul.extendedGrades{
+    padding:4px 0 16px 0;
+    li:last-of-type{
+        padding-bottom: 8px;
+    }
+}
+.percentSpan{
+    padding-left: 32px;
+}
+/*Tags*/
+.tagsContainer{
+    margin:0 0 8px 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tagInput{
+    width:50%;
+    max-width:240px;
+    min-width:120px;
+    height:2rem;
+    margin:8px 16px 16px 24px;
+    outline:0;
+    border-width: 0;
+    border-bottom:1px solid var(--light);
+    font-size: 1rem;
+    font-weight:400;
+    &::placeholder{
+        font-size: 1rem;
+        font-weight:200;
+        color:var(--dark);
+      }
+    &:focus{
+        border-color: black;
+    }
+  }
+.tag{
+    border-radius:4px;
+    padding:6px 6px 8px;
+    margin-right:4px;
+    margin-bottom: 4px;
+    background:var(--light);
+    word-break: keep-all;
+    svg{
+        cursor: pointer;
+        transform: translateY(10%);
+    }
+}
+.tagError{
+    color:var(--alert);
+    margin:4px;
+}
+
+
+
+

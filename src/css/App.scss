@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+@import url(./_colors.css);
+
+
+@media (max-width: 380px) {
+  .App{padding-top: 0;
+    padding-bottom: 0;};
+}
+
+.App{
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .no-result{
+    display: flex;
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width:124px;
+      display: block;
+      margin-bottom: 16px;
+    }
+    h2{
+      font-size: 32px;
+    }
+  }
+}
+
+
+.searchInput{
+  width:97%;
+  height:2rem;
+  margin:24px 1.5% 0 1.5%;
+  outline:0;
+  border-width: 0;
+  border-bottom:1px solid var(--light);
+  font-size: 1rem;
+  font-weight:400;
+
+  &::placeholder{
+    font-size: 1.25rem;
+    font-weight:200;
+  }
+  &:focus{
+    border-bottom:1px solid var(--dark);
+  }
+}
+
+.StudentsList{
+    width:880px;
+    height:660px; 
+    overflow-y:scroll;
+    background:white;
+    border-radius:12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  /* hide scrollbar but allow scrolling */
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    &::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari, and Opera */
+    }
+}
+
+
+
+

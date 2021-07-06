@@ -1,0 +1,9 @@
+/*Colors*/
+:root {
+    --background:#EFEFEF;
+    --light:lightGrey;
+    --dark:darkgrey;
+    --alert:palevioletred;
+    --darkFont:black;
+    --lightFont: rgba(0,0,0,.6);
+  }
